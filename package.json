@@ -1,0 +1,26 @@
+{
+  "name": "pcat",
+  "version": "1.0.0",
+  "description": "PCAT Photo App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ozcanyureklioglu/PCAT.git"
+  },
+  "keywords": [
+    "photo",
+    "pcat"
+  ],
+  "author": "Özcan Yüreklioğlu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ozcanyureklioglu/PCAT/issues"
+  },
+  "homepage": "https://github.com/ozcanyureklioglu/PCAT#readme",
+  "devDependencies": {
+    "prettier": "2.6.2"
+  }
+}
