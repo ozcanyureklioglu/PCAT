@@ -4,7 +4,8 @@
   "description": "PCAT Photo App",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,14 @@
   "homepage": "https://github.com/ozcanyureklioglu/PCAT#readme",
   "devDependencies": {
     "prettier": "2.6.2"
+  },
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "express-fileupload": "^1.3.1",
+    "install": "^0.13.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.2.10",
+    "nodemon": "^2.0.15"
   }
 }
