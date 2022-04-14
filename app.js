@@ -13,10 +13,14 @@ const { redirect } = require('express/lib/response');
 var app = express();
 
 //Mongoose database connection
-mongoose.connect('mongodb://localhost/pcat-test-db', {
+mongoose.connect('mongodb+srv://ozcan:5Sg1vt5ctuUp5Clu@cluster0.d8yf3.mongodb.net/pcat-db?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   
+}).then(()=>{
+  console.log("DB CONNECTİON IS SUCCESFULY");
+}).catch(()=>{
+  console.log("DB CONNECTİON IS FAİLED");
 });
 
 //TEMPLATE ENGİNE
@@ -46,7 +50,7 @@ app.get('/photos/edit/:id', pageController.edit);
 
 
 
-const port = 3000;
+const port = process.env.PORT || 5000;
 
 app.listen(port, () => {
   console.log(port, ' portunda sunucu çalıştı');
